@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="lib" path="/Users/yuxuansun/WorkSpace/14736/project4/hash/commons-codec-1.11.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

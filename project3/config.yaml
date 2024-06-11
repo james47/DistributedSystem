@@ -1,0 +1,22 @@
+cassandra: { host: ghc45.ghc.andrew.cmu.edu, port: 9042 }
+redis: { host: ghc61.ghc.andrew.cmu.edu, port: 6379 }
+webserver: { host: ghc47.ghc.andrew.cmu.edu, port: 4747}
+cache: { host: ghc61.ghc.andrew.cmu.edu, port: 4747}
+store:
+    - name: '0'
+      host: ghc52.ghc.andrew.cmu.edu
+      port: 4747
+    - name: '1'
+      host: ghc53.ghc.andrew.cmu.edu
+      port: 4747
+    - name: '2'
+      host: ghc54.ghc.andrew.cmu.edu
+      port: 4747
+lvs:
+    - id: '0'
+      stores: ['0', '1', '2']
+    - id: '1'
+      stores: ['0', '1', '2']
+    - id: '2'
+      stores: ['0', '1', '2']
+lvspath: /tmp/store/
